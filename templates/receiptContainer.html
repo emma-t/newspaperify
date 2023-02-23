@@ -1,0 +1,70 @@
+{% macro receiptContainer(display_name, songs, id, duration) -%}
+<div class="receiptContainer" id="{{ id }}">
+
+    <!-- Title -->
+    <aboveLeft class="aboveLeft">
+        https://github.com/emma-t/newspaperify
+    </aboveLeft>
+    <aboveRight class="aboveRight">
+        {{currentTime|strftime}} ISSUE
+    </aboveRight>
+    <lineTop class="lineTop">
+        <br>---------------------------------------------------------------------</br>
+    </lineTop>
+    <h2 class="logo">
+        NEWSPAPERIFY
+    </h2>
+    <subTitle class="subTitle">
+        SPOTIFY TRACK GENERATOR OF {{ duration }}
+    </subTitle>
+    <lineBot class="lineBot">
+        <br>---------------------------------------------------------------------</br>
+    </lineBot>
+    
+    <table class="tracks">
+        <thead>
+            <tr>
+                <td class="begin">
+                    "Top song: {{ songs[0].name }}" 
+                </td>
+                <td class="begin">
+                    PLACEHOLDER FOR PFP
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <br>
+                    - {{ songs[0].artists[0].name }}
+                    </br>
+
+                    <br>
+                    Here are some of the trending songs in the news today:
+                    </br>
+                    <br> </br>
+                </td>
+                <td class="name" rowspan=4>
+                    "I really like these songs"
+                    <br>- {{ display_name }}</br>
+                    <br> </br>
+                    <br>Thanks for trying out this project! I really hope you liked it and please consider sharing it!</br>
+                </td>
+            </tr>
+            
+            {% for song in songs %}
+            <tr>
+                <td class="begin">
+                    {{ loop.index }} {{ song.name }} by {{ song.artists[0].name }}
+                </td>
+            </tr>
+            {% endfor %}
+
+        </thead>
+    
+    </table>
+
+</div>
+</div>
+
+
+{%- endmacro %}
