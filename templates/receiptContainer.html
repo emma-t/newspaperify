@@ -49,16 +49,16 @@
 
             <tr>
                 <td class="name"> </td>
-                <td class="name" rowspan=4>
+                <td class="name" rowspan=10>
                     <br>- {{ display_name }}</br>
-                    <br>Thanks for trying out this project! I really hope you liked it and please consider sharing it!</br>
+                    <br>Thank you for taking the time to read our article. At <b>Newspaperify</b>, we are dedicated to bringing you the latest news and insights on a variety of topics. We hope that you found our article informative and engaging, and that it provided you with valuable information that you can use in your daily life. Your support and readership are greatly appreciated, and we look forward to continuing to serve you in the future. Thank you again for choosing <b>Newspaperify</b> as your trusted source for news and information.</br>
                 </td>
             </tr>
             
             {% for song in songs %}
             <tr>
                 <td class="begin">
-                    {{ loop.index }} {{ song.name }} by {{ song.artists[0].name }}
+                    <b>{{ loop.index }}</b> {{ song.name }} by {{ song.artists[0].name }}
                 </td>
             </tr>
             {% endfor %}
