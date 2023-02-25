@@ -24,10 +24,10 @@
     <table class="tracks">
         <thead>
             <tr>
-                <td class="begin">
+                <td quote width="300px" class="quote">
                     "Top song: {{ songs[0].name }}" 
-                </td>
-                <td class="begin">
+                </quote>
+                <td width="300px" class="begin">
                     PLACEHOLDER FOR PFP
                 </td>
             </tr>
@@ -41,12 +41,16 @@
                     <br>
                     Here are some of the trending songs in the news today:
                     </br>
-                    <br> </br>
                 </td>
-                <td class="name" rowspan=4>
+                <td quote class="quote">
                     "I really like these songs"
+                </td>
+            </tr>
+
+            <tr>
+                <td class="name"> </td>
+                <td class="name" rowspan=4>
                     <br>- {{ display_name }}</br>
-                    <br> </br>
                     <br>Thanks for trying out this project! I really hope you liked it and please consider sharing it!</br>
                 </td>
             </tr>
