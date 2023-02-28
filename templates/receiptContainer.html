@@ -1,4 +1,4 @@
-{% macro receiptContainer(display_name, songs, id, duration) -%}
+{% macro receiptContainer(display_name, images, songs, id, duration) -%}
 <div class="receiptContainer" id="{{ id }}">
 
     <!-- Title -->
@@ -9,7 +9,7 @@
         {{currentTime|strftime}} ISSUE
     </aboveRight>
     <lineTop class="lineTop">
-        <br>---------------------------------------------------------------------</br>
+        <br>---------------------------------------------------------</br>
     </lineTop>
     <h2 class="logo">
         NEWSPAPERIFY
@@ -18,7 +18,7 @@
         SPOTIFY TRACK GENERATOR OF {{ duration }}
     </subTitle>
     <lineBot class="lineBot">
-        <br>---------------------------------------------------------------------</br>
+        <br>---------------------------------------------------------</br>
     </lineBot>
     
     <table class="tracks">
@@ -27,8 +27,8 @@
                 <td quote width="300px" class="quote">
                     "Top song: {{ songs[0].name }}" 
                 </quote>
-                <td width="300px" class="begin">
-                    PLACEHOLDER FOR PFP
+                <td width="300px" class="begin" style="text-align: center;">
+                    <img src={{ images[0].url }} style="object-fit: cover; width: 200px; height: 200px;"/>
                 </td>
             </tr>
 

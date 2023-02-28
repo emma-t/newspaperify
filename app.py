@@ -68,6 +68,7 @@ def getTracks():
     )
 
     current_user_name = sp.current_user()['display_name']
+    images = sp.current_user()['images']
     short_term = sp.current_user_top_tracks(
         limit=10,
         offset=0,
@@ -87,7 +88,7 @@ def getTracks():
     if os.path.exists(".cache"): 
         os.remove(".cache")
 
-    return render_template('receipt.html', user_display_name=current_user_name, short_term=short_term, medium_term=medium_term, long_term=long_term, currentTime=gmtime())
+    return render_template('receipt.html', user_display_name=current_user_name, images=images, short_term=short_term, medium_term=medium_term, long_term=long_term, currentTime=gmtime())
 
 
 @app.template_filter('strftime')
