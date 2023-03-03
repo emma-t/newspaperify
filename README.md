@@ -34,7 +34,7 @@
 
 [BACKGROUND](https://github.com/emma-t/newspaperify#-background) • 
 [TECH STACK](https://github.com/emma-t/newspaperify#-tech-stack) • 
-[SETUP](https://github.com/emma-t/newspaperify#-setup) • 
+[SETUP](https://github.com/emma-t/newspaperify#-setup)
 
 </div>
 
