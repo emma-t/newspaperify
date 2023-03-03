@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: receiptify_app:v1
+    image: nespaperify_app:v1
     restart: unless-stopped
     #env_file: .env
     environment:

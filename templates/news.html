@@ -9,21 +9,21 @@
 
 <body>
 
-    {% from "receiptContainer.html" import receiptContainer with context %}
+    {% from "newsContainer.html" import newsContainer with context %}
 
     <script>
 
-        var activeReceipt;
+        var activeNews;
 
 
         function showContent(id) {
             // set all of the other ones to invisible
-            for (let i = 0; i < document.querySelectorAll(".receiptContainer").length; i++) {
-                document.querySelectorAll(".receiptContainer")[i].style.display = "none"
+            for (let i = 0; i < document.querySelectorAll(".newsContainer").length; i++) {
+                document.querySelectorAll(".newsContainer")[i].style.display = "none"
             }
             document.getElementById(id).style.display = 'inline-block'
             document.getElementById('downloadPicButton').style.display = 'inline-block'
-            activeReceipt = id
+            activeNews = id
         }
 
         function hiddenClone(element) {
@@ -44,13 +44,13 @@
         $(document).ready(function () {
 
             // Global variable
-            var element = $(".receiptContainerWrapper");
+            var element = $(".newsContainerWrapper");
 
             // Global variable
             var getCanvas;
 
             $("#downloadPicButton").on('click', function () {
-                var offScreen = document.querySelector(".receiptContainerWrapper");
+                var offScreen = document.querySelector(".newsContainerWrapper");
                 window.scrollTo(0, 0);
                 var clone = hiddenClone(offScreen);
                 // Use clone with htm2canvas and delete clone
@@ -59,7 +59,7 @@
                     document.body.removeChild(clone);
                     var link = document.createElement("a");
                     link.href = dataURL;
-                    link.download = `${activeReceipt}.png`;
+                    link.download = `${activeNews}.png`;
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
@@ -72,7 +72,7 @@
 
     <div>
         <center>
-            <h1>Receiptify</h1>
+            <h1>Newspaperify</h1>
             <h2>Top Track Generator</h2>    
         </center>
     </div>
@@ -81,23 +81,19 @@
     <div style="width: 100%; height: auto" class="buttons">
         <center>
             <div>
-                <button onclick="showContent('short_term_receipt')" class="generatePicButton">Short Term Receipt</button>
-                <button onclick="showContent('medium_term_receipt')" class="generatePicButton">Medium Term Receipt</button>
-                <button onclick="showContent('long_term_receipt')" class="generatePicButton">Long Term Receipt</button>
+                <button onclick="showContent('short_term_news')" class="generatePicButton">Short Term Newspaper</button>
+                <button onclick="showContent('medium_term_news')" class="generatePicButton">Medium Term Newspaper</button>
+                <button onclick="showContent('long_term_news')" class="generatePicButton">Long Term Newspaper</button>
             </div>
         </center>
     </div>
 
-    <div style="width: 100%; height: auto" class="receiptContainerWrapper">
+    <div style="width: 100%; height: auto" class="newsContainerWrapper">
         
-        <center> {{ receiptContainer(user_display_name, images, short_term['items'], 'short_term_receipt', 'LAST MONTH') }} </center>
-        <center> {{ receiptContainer(user_display_name, images, medium_term['items'], 'medium_term_receipt', 'LAST 6 MONTHS') }} </center>
-        <center> {{ receiptContainer(user_display_name, images, long_term['items'], 'long_term_receipt', 'ALL TIME') }} </center>
+        <center> {{ newsContainer(user_display_name, images, short_term['items'], 'short_term_news', 'LAST MONTH') }} </center>
+        <center> {{ newsContainer(user_display_name, images, medium_term['items'], 'medium_term_news', 'LAST 6 MONTHS') }} </center>
+        <center> {{ newsContainer(user_display_name, images, long_term['items'], 'long_term_news', 'ALL TIME') }} </center>
     </div>
-
-    <center>
-        <button class="generatePicButton" id="downloadPicButton">Download</button>
-    </center>
 
 </body>
 

@@ -1,7 +1,7 @@
 
 
 
-  #short_term_receipt {
+  #short_term_news {
     display: none 
   }
 
@@ -9,11 +9,11 @@
     display: none
   }
 
-  #medium_term_receipt {
+  #medium_term_news {
     display: none 
   }
 
-  #long_term_receipt {
+  #long_term_news {
     display: none 
   }
 
@@ -26,7 +26,7 @@
     background-color: #fff;
 }
 
-  .receiptContainer {
+  .newsContainer {
     background-image: url(wrinkled-paper.jpg);
     background-position: center;
     width: 640px;
