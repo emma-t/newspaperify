@@ -44,7 +44,7 @@
 
 # 🧐 Background
 
-**⭐ Love for Spotify**
+⭐ Love for Spotify ⭐ <br> </br>
 This is really a tribute to the Spotify API. I absolutely love how Spotify makes yearly wraps for every user and I wanted to make something of my own! Combining my passion for frontend and graphic design, I created and designed a newspaper displaying a user's top songs.
 <br> </br>
 
@@ -69,7 +69,7 @@ This is really a tribute to the Spotify API. I absolutely love how Spotify makes
 </tr>
 <tr>
 <td>
-  <img src='https://raw.githubusercontent.com/emma-t/newspaperify/master/photos/Newspaperify%20planning.png?token=GHSAT0AAAAAAB5WNV3GQP57JGPG4O5KQLO6ZACKI5Q' width=420px />
+  <img src='https://raw.githubusercontent.com/emma-t/newspaperify/master/photos/Newspaperify%20planning.png?token=GHSAT0AAAAAAB5WNV3GQP57JGPG4O5KQLO6ZACKI5Q' width=400px />
 </td>
 <td>
   <img src='https://raw.githubusercontent.com/emma-t/newspaperify/master/photos/Newspaperify%20output.png?token=GHSAT0AAAAAAB5WNV3HG2CH5OJYSX6Y66AIZACJQCA' width=441px />
