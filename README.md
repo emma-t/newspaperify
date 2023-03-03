@@ -1,6 +1,6 @@
 <div align='center'>
 
-# NEWSPAPERIFY
+# 🎵📰 NEWSPAPERIFY 📰🎵
 
 </div>
 
@@ -33,9 +33,8 @@
 <div align="center">
 
 [BACKGROUND](https://github.com/emma-t/newspaperify#-background) • 
-[TECH STACK](https://github.com/emma-t/007Secure#-tech-stack) • 
-[SETUP](https://github.com/emma-t/007Secure#%EF%B8%8F-contributing) • 
-[THANK YOU](https://github.com/emma-t/007Secure#-spread-the-word) • 
+[TECH STACK](https://github.com/emma-t/newspaperify#-tech-stack) • 
+[SETUP](https://github.com/emma-t/newspaperify#-setup) • 
 
 </div>
 
@@ -47,35 +46,45 @@
 
 **⭐ Love for Spotify**
 This is really a tribute to the Spotify API. I absolutely love how Spotify makes yearly wraps for every user and I wanted to make something of my own! Combining my passion for frontend and graphic design, I created and designed a newspaper displaying a user's top songs.
+<br> </br>
 
-<img src='https://raw.githubusercontent.com/emma-t/newspaperify/master/photos/Newspaperify.png?token=GHSAT0AAAAAAB5WNV3G3Y4OYVA6LQW5TFJQZACJPSA' width=800px>
-<img src='https://raw.githubusercontent.com/emma-t/newspaperify/master/photos/Newspaperify%20output.png?token=GHSAT0AAAAAAB5WNV3HG2CH5OJYSX6Y66AIZACJQCA' width=250px>
-
+<table>
+<tr>
+<th align="center">
+<img width="441" height="1">
+<p> 
+<small>
+✏️ PLANNED DESIGN
+</small>
+</p>
+</th>
+<th align="center">
+<img width="441" height="1">
+<p> 
+<small>
+✒️ FINAL DESIGN
+</small>
+</p>
+</th>
+</tr>
+<tr>
+<td>
+  <img src='https://raw.githubusercontent.com/emma-t/newspaperify/master/photos/Newspaperify%20planning.png?token=GHSAT0AAAAAAB5WNV3GQP57JGPG4O5KQLO6ZACKI5Q' width=420px />
+</td>
+<td>
+  <img src='https://raw.githubusercontent.com/emma-t/newspaperify/master/photos/Newspaperify%20output.png?token=GHSAT0AAAAAAB5WNV3HG2CH5OJYSX6Y66AIZACJQCA' width=441px />
+</td>
+</tr>
+</table>
 
 # 👨‍💻 Tech stack
 
-Here's a brief high-level overview of the tech stack the 007Secure uses:
+Here's a brief high-level overview of the tech stack Newspaperify uses:
 
-- This project uses CSS, HTML, and JS and is deployed on the github-pages environment
-- The base of the site uses a Pen created on CodePen.io. Original URL: [https://codepen.io/naemazam/pen/rNrqeZB](https://codepen.io/naemazam/pen/rNrqeZB)
-- The name 007Secure refers to how the website theme resembles that of being a spy, like James Bond. Everyone's security is important and it is our **mission** to teach as many people as we can
+- This project uses CSS, HTML, and JS and is deployed with flask
+- Spotify API is called multiple times to login and get user information
 
-# ✍️ Contributing
-Interested in contributing to the 007Secure project? Thanks so much for your interest! We are always looking for improvements to the project and contributions from open-source developers are greatly appreciated.
-
-# 🌟 Spread the word!
-
-If you want to say thank you and/or support active development of 007Secure:
-- Add a GitHub Star to the project 
-- Support us on the [Hackathon's Devpost](https://uottahack5.devpost.com/)
-
-Thanks so much for your interest in growing the reach of 007Secure! Cyber security is one of the most important things to consider in our daily lives and the more people who practice it, the safer our world becomes!
-
-# ⚠️ License
-007Secure is available under the MIT license. See the LICENSE file for more info.
-
-<br />
-
+# 🌟 Setup
 
 ## Steps to getting spotify credentials 
 1. go to https://developer.spotify.com/dashboard/login and make an account and a project 
@@ -86,3 +95,5 @@ After you get credentials...
 ## Steps to run locally 
 1. python3 setup.py install 
 2. flask run 
+
+<br />
